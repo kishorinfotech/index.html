@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Advanced Portfolio</title>
+    <!-- Tailwind CSS CDN for Modern Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Navbar -->
+    <header class="w-full py-6 px-8 flex justify-between items-center border-b border-slate-800">
+        <h1 class="text-2xl font-bold tracking-wider text-sky-400">Portfolio.dev</h1>
+        <nav class="hidden md:flex space-x-6 text-slate-300">
+            <a href="#home" class="hover:text-sky-400 transition">Home</a>
+            <a href="#about" class="hover:text-sky-400 transition">About</a>
+            <a href="#projects" class="hover:text-sky-400 transition">Projects</a>
+            <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Hero Section -->
+    <main id="home" class="flex-grow flex flex-col items-center justify-center text-center px-6 py-20">
+        <span class="bg-slate-800 text-sky-400 text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-slate-700">
+            Welcome to my digital space
+        </span>
+        <h2 class="text-4xl md:text-6xl font-extrabold tracking-tight max-w-3xl mb-6 leading-tight">
+            Building Advanced <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-500">Web Experiences</span>
+        </h2>
+        <p class="text-lg text-slate-400 max-w-xl mb-10">
+            Clean code, modern design, and high-performance applications hosted live seamlessly via GitHub.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#projects" class="bg-sky-500 hover:bg-sky-600 text-slate-950 font-semibold px-8 py-3 rounded-lg transition glow-effect">
+                Explore Projects
+            </a>
+            <a href="#contact" class="border border-slate-700 hover:border-slate-500 text-slate-200 px-8 py-3 rounded-lg transition">
+                Get in Touch
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-6 text-center text-sm text-slate-500 border-t border-slate-800">
+        <p>© 2026 My Advanced Website. Hosted on GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
